@@ -1,10 +1,8 @@
-# Aluna: Gabriela Aparecida Tavares Corado Loreno.
-
 import nltk
 import pymysql
 
 def abrirConexao():
-    return pymysql.connect(host='localhost', user='root', passwd='ceub123456', db='indice', use_unicode=True, charset="utf8mb4")
+    return pymysql.connect(host='localhost', user='root', passwd='*', db='indice', use_unicode=True, charset="utf8mb4")
 
 def getIdPalavra(conexao, palavra):
     try:
